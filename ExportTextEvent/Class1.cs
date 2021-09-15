@@ -47,14 +47,15 @@ namespace ExportTextEvent
                         continue;
                     }
 
+                    // テキストイベントのテキストを取得する
                     string planeText = GetPlaneTextFromMedia(take.Media);
                     if (planeText.Length == 0)
                     {
                         continue;
                     }
 
-                    // ファイルパスが見つかった
-                    // このファイルが張り付けられているフレーム位置とファイルパスのペアを追加する
+                    // テキストが見つかった
+                    // このファイルが張り付けられているフレーム位置とテキストのペアを追加する
                     textEvents.Add(Tuple.Create(trackEvent.Start.FrameCount, planeText));
                 }
             }
@@ -71,7 +72,7 @@ namespace ExportTextEvent
             {
                 timecode.FrameCount = textEvent.Item1;
                 string text = textEvent.Item2;
-                string textWithoutNewLine = text.Replace('\n', ' ');
+                string textWithoutNewLine = text.Replace('\n', ' ');    // 改行はスペースに置き換える
 
                 writer.WriteLine(timecode.ToString() + " " + textWithoutNewLine);
             }
