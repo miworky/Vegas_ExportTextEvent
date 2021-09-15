@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportTextEvent", "ExportTextEvent\ExportTextEvent.csproj", "{2DD3CFE8-FA91-4718-901A-89A815F5D5FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DD3CFE8-FA91-4718-901A-89A815F5D5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD3CFE8-FA91-4718-901A-89A815F5D5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD3CFE8-FA91-4718-901A-89A815F5D5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD3CFE8-FA91-4718-901A-89A815F5D5FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDE97F67-FB38-4794-A97F-7F6B4EC6A9F1}
+	EndGlobalSection
+EndGlobal
